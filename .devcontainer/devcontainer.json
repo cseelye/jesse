@@ -1,0 +1,12 @@
+{
+	"name": "Local Dockerfile",
+	"context": "..",
+	"dockerFile": "../Dockerfile",
+	"settings": {},
+	"extensions": ["ms-python.python"],
+	// "forwardPorts": [],
+	// "runArgs": [],
+	"postStartCommand": "pip install --editable /workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace"
+}
